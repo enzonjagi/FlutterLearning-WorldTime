@@ -21,3 +21,4 @@ samples, guidance on mobile development, and a full API reference.
 2. Routed the screens 
 3. added asynchronous code(getData() function) in the      choose location file to simute newtwork requests, as well as the await keywords to understand how it works, read comments for more info
 4. location screen set as the initialRoute to demonstrate receiving data from an endpoint using the get function, stored in the response variable for manipulation 
+5. Getting actual world time from a worldtime api endpoint, then using the 'datetime' and 'utc' properties to calculate my current local time
