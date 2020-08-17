@@ -20,4 +20,4 @@ samples, guidance on mobile development, and a full API reference.
 1. added screens
 2. Routed the screens 
 3. added asynchronous code(getData() function) in the      choose location file to simute newtwork requests, as well as the await keywords to understand how it works, read comments for more info
- 
+4. location screen set as the initialRoute to demonstrate receiving data from an endpoint using the get function, stored in the response variable for manipulation 
