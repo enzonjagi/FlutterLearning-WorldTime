@@ -8,35 +8,7 @@ class ChooseLocation extends StatefulWidget {
 class _ChooseLocationState extends State<ChooseLocation> {
 
   //How an asynchronous request to get data works
-  void getData() async {
-
-
-    //simulate a network request from a username db
-    //await keyword used to tell the function to wait 
-    //till this function is complete
-    //to run the next line of code
-    //code outside the asynchronous function 
-    //does not wait for the asynchronous function to run
-    //i.e it will not be affected
-    String username = await Future.delayed(Duration(seconds: 3), (){
-      return 'Kavengi';
-    });
-
-    //Simulate network request to get bio of the username
-    String bio = await Future.delayed(Duration(seconds: 2), (){
-      return 'Future gf and wife';
-    });
-
-    print('$username - $bio');
-  }
-
-  int counter = 0;
-  @override
-  void initState() {
-    // TODO: implement initState
-    super.initState();
-    getData();
-  }
+  
 
   @override
   Widget build(BuildContext context) {
@@ -49,16 +21,7 @@ class _ChooseLocationState extends State<ChooseLocation> {
         centerTitle: true,
         elevation: 0,
       ),
-      body: Center(
-        child: RaisedButton(
-          onPressed: () {
-            setState(() {
-              counter += 1;
-            });
-          },
-          child: Text("Counter is $counter"),
-        ),
-      ),
+      
     );
   }
 }
