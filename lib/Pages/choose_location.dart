@@ -15,6 +15,9 @@ class _ChooseLocationState extends State<ChooseLocation> {
     //await keyword used to tell the function to wait 
     //till this function is complete
     //to run the next line of code
+    //code outside the asynchronous function 
+    //does not wait for the asynchronous function to run
+    //i.e it will not be affected
     String username = await Future.delayed(Duration(seconds: 3), (){
       return 'Kavengi';
     });
