@@ -23,3 +23,6 @@ samples, guidance on mobile development, and a full API reference.
 4. location screen set as the initialRoute to demonstrate receiving data from an endpoint using the get function, stored in the response variable for manipulation 
 5. Getting actual world time from a worldtime api endpoint, then using the 'datetime' and 'utc' properties to calculate my current local time
 6. Setup World time class for usability
+7. introduced a try-catch block in the worldtime class in case there is an error. To avoid displaying weird sreens for the user
+9. Pass the route data from the loading widget to the home widget
+9. Format the time using the intl package by flutter
