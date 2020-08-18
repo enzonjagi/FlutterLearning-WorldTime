@@ -26,3 +26,4 @@ samples, guidance on mobile development, and a full API reference.
 7. introduced a try-catch block in the worldtime class in case there is an error. To avoid displaying weird sreens for the user
 9. Pass the route data from the loading widget to the home widget
 9. Format the time using the intl package by flutter
+10. Make the loading screen appealing using the flutter spinkit
