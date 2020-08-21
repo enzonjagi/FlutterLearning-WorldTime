@@ -17,6 +17,7 @@ samples, guidance on mobile development, and a full API reference.
 
 
 "# FlutterLearning-WorldTime" 
+Steps in development as per the commits...from commit 4 onwards
 1. added screens
 2. Routed the screens 
 3. added asynchronous code(getData() function) in the      choose location file to simute newtwork requests, as well as the await keywords to understand how it works, read comments for more info
