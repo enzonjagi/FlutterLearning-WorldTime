@@ -27,3 +27,4 @@ samples, guidance on mobile development, and a full API reference.
 9. Pass the route data from the loading widget to the home widget
 9. Format the time using the intl package by flutter
 10. Make the loading screen appealing using the flutter spinkit
+11. Added background images and colors based on whether is is day or night time
