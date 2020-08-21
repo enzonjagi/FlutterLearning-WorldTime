@@ -21,6 +21,23 @@ class _ChooseLocationState extends State<ChooseLocation> {
     WorldTime(url: 'Africa/Lagos', location: 'Lagos', flag: 'nigeria.png'),
 
   ];
+
+  void updateTime(index) async {
+    WorldTime instance = locations[index];
+
+    await instance.getTime();
+    //navigate to home screen
+    //pass the data to the homescreen
+    //location, daytime background, flag
+    //pop the choose location screen
+    Navigator.pop(context, {
+      'location': instance.location,
+      'flag': instance.flag,
+      'time': instance.time,
+      'isDayTime': instance.isDayTime
+    }); 
+
+  }
   
 
   @override
@@ -42,7 +59,7 @@ class _ChooseLocationState extends State<ChooseLocation> {
             child: Card(
               child: ListTile(
                 onTap: (){
-                  print(locations[index].location);
+                  updateTime(index);
                 },
                 title: Text(locations[index].location),
                 leading: CircleAvatar(
